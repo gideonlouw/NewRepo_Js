@@ -10,7 +10,10 @@ const morgan = require('morgan');
 const app = express();
 
 const ads = [{ title: 'hello!' }];
-const myobj = { name: "Company Inc", address: "Highway 37" };
+
+var number = Math.floor((Math.random() * 100) + 1);
+
+const myobj = { name: "Company Inc " + number, address: "Highway 37" + number };
 
 
 app.use(bodyParser.json());
